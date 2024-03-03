@@ -12,15 +12,15 @@ i = 1
 while(flag or not numbers):
     var = input(f'[{i}]:\t')
     if not re.match('/[1-9]+/g',var) or var == 'q' or var == 't':
-        if var is 't': # if terminated of type numbers
-            flag = False
-        elif var is 'q': # if wish to quit the program
-            flag = False
+        if var == 't': # if terminated of type numbers
+            break;
+        elif var == 'q': # if wish to quit the program
+            break;
         else:
             numbers.append(int(var))
     i += 1
 
-if var is 't':
+if var == 't':
     # insertion sort
     for j in range(1,len(numbers)):
 
